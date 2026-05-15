@@ -63,3 +63,55 @@ cat New_file.sh
 
 cat New_file.sh New_file2.sh
 
+## less
+less command is used a terminal pager used to view the contents of a text file or command output one screen at a time.
+
+**example** 
+less Newfile.txt
+
+## more 
+The more command in Linux is a terminal utility used to view the contents of a text file one screen (or page) at a time.
+
+**flags:**
+-d: Provides helpful navigation prompts instead of just a bell sound for errors.
+-n (or -number): Specifies the number of lines to show per screen (e.g., more -10 file.txt).
+
+
+## head
+ Outputs the beginning section (first 10 lines by default) of a specified file
+
+**Example**
+head syslog.txt displays the first 10 log entries.
+
+## head -n
+Outputs a specific, custom number of lines from the beginning of a file.
+
+**Example**
+head -n 5 config.cfg ,displays only the first 5 configuration lines.
+
+## tail 
+Outputs the final section (last 10 lines by default) of a specified file.
+
+**Example**
+tail error.log , views the 10 most recent error entries.
+
+## tail -f
+Monitors a file in real-time, appending new lines to the screen as the file grows.
+
+**Example** tail -f server, log tracks live incoming application traffic.
+
+## nano
+Opens an easy-to-use, command-line text editor to create or modify files directly in the terminal.
+
+**Example** nano script.sh ,opens the shell script file for live editing.
+
+## wc -l
+Counts and displays the total number of newline characters (lines) inside a file.
+
+**Example**
+wc -l users.csv ,shows how many user rows exist in the database export.
+
+## wc -c
+Counts and displays the total number of bytes (character count) contained in a file.
+
+**Example** wc -c readme.md outputs the exact file size metric in bytes.
